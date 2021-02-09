@@ -4,7 +4,7 @@
 
 Write a function that takes as its input a number `n` and converts it to a string, the contents of which depend on the numbers factors of `n`:
 - If `n` has a factor of 3, return `Pling`
-- If `n` has a factor of 5, retuen `Plang`
+- If `n` has a factor of 5, return `Plang`
 - If `n` has a factor of 7, return `Plong`
 - If `n` does not have any of the above as a factor, return `n`'s digits
 
@@ -19,7 +19,7 @@ Write a function that takes as its input a number `n` and converts it to a strin
     - 30 returns `Pling` and `Plang`
     - These results merge together to return `PlingPlang`
 3. 34 has the factors 1, 2, 17, and 34
-    - These factors are not of either 3, 5, or 7
+    - These values are not factors of either 3, 5, or 7
     - 34 returns itself as `34`
 
 ## Testing
