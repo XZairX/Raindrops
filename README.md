@@ -30,8 +30,8 @@ The naming convention of the test methods take the form of:
 3. The expected output out of the test
 
 This convention has the advantage of mapping onto the more user-friendly Gherkin syntax that is found with Behaviour-Driven Development(BDD). Using the example test above, the corresponding Gherkin syntax would roughly equate to:
-1. `GIVEN` the `PlingPLangPlong` method
-2. `WHEN` the <input> has a factor of 3
+1. `GIVEN` the `PlingPlangPlong` method
+2. `WHEN` the &lt;input&gt; has a factor of 3
 3. `THEN` the method should return pling
 
 Within the test, the Arrange-Act-Assert(AAA) pattern has been employed to standardise the readability and structure of the tests. The system under test (SUT) consists of a class which holds the single 'PlingPlangPlong' method that is being tested in all of the test methods. As the SUT does not have a state, the initial Arrange section has been delegated to the class level field `_sut` that is shared between all test methods. The Act and Assert sections follow standard convention where data is processed in the Act section, and this data asserted against in the following Assert section.
