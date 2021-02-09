@@ -1,12 +1,12 @@
 using NUnit.Framework;
-using Raindrops;
+using RaindropsLibrary;
 
 namespace RaindropsTests
 {
     [TestFixture]
     public class RaindropTests
     {
-        private readonly RaindropFactors _sut = new RaindropFactors();
+        private readonly Raindrops _sut = new Raindrops();
 
         [TestCase(1)]
         [TestCase(8)]
