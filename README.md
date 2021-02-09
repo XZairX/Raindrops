@@ -18,7 +18,7 @@ Write a function that takes as its input a number `n` and converts it to a strin
 
 ## Testing
 
-<image src="images/example-test.png" width="80%" height="80%">
+<image src="images/example-test.png" width="100%" height="100%">
 
 The typical structure of the unit tests used in this application is seen above.
 Each test is accompanied by several `[TestCase]` attributes which parameterises the tests to allow for multiple values to be tested against within a single test.
@@ -33,4 +33,6 @@ This convention has the advantage of mapping easily onto the more user-friendly 
 2. `WHEN` the `<input>` has a factor of 3
 3. `THEN` the method should return Pling
 
-Within the test, the Arrange-Act-Assert(AAA) pattern has been employed to standardise the readability and structure of the tests. The system under test(SUT) consists of a class which holds the single 'PlingPlangPlong' method that is being tested in all of the test methods. As the SUT does not have a state, the initial Arrange section has been delegated to the class level field `_sut` that is shared between all test methods. The Act and Assert sections follow standard convention where data is processed in the Act section, and this data asserted against in the following Assert section.
+Within the test, the Arrange-Act-Assert(AAA) pattern has been employed to standardise the readability and structure of the tests. The system under test(SUT) consists of a class which holds the single 'PlingPlangPlong' method that is being tested in all of the test methods. As the SUT does not have a state, the initial Arrange section has been delegated to the class level field `_sut` that is shared between all test methods as seen below. The Act and Assert sections follow standard convention where data is processed in the Act section, and this data asserted against in the following Assert section.
+
+<image src="images/sut-field.png" width="100%" height="100%">
