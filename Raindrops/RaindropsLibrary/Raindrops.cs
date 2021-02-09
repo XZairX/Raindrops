@@ -1,8 +1,8 @@
 ﻿using System.Text;
 
-namespace Raindrops
+namespace RaindropsLibrary
 {
-    public class RaindropFactors
+    public class Raindrops
     {
         public string PlingPlangPlong(int n)
         {
