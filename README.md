@@ -25,11 +25,12 @@ The typical structure of the unit tests used in this application is seen above.
 Each test is accompanied by several `[TestCase]` attributes which parameterises the tests to allow for multiple values to be tested against within a single test.
 
 The naming convention of methods take the form of:
-1. Method being testing against
-2. Condition to test
-3. Expected output
+1. The method being tested
+2. The condition(s) to test against
+3. The expected output out of the test
 
-Using the example above, this equates to:
+This convention has the advantage of mapping onto the more user-friendly Gherkin syntax that is found with Behaviour-Driven Development(BDD). Using the example test above, the corresponding Gherkin syntax would roughly equate to:
 1. `GIVEN` the `PlingPLangPlong` method
-2. `WHEN` the argument number (input) does not have a factor of 3 or 5 or 7
-3. `THEN` the method should return the argument number
+2. `WHEN` the <input> has a factor of 3
+3. `THEN` the method should return pling
+
