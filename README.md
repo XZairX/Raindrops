@@ -36,7 +36,9 @@ The naming of the test methods take the form of a convention encouraged by [Micr
 
 This convention has the advantage of mapping easily onto the more user-friendly Gherkin syntax that is found with Behaviour-Driven Development (BDD) tests. Using the same example test above, the corresponding Gherkin syntax would roughly equate to:
 1. `GIVEN` the `PlingPlangPlong` method
-2. `WHEN` the `<input>` has a factor of 3
-3. `THEN` the method should return `Pling`
+2. `WHEN` the `<input>` does not have a factor of 3
+3. `AND` the `<input>` does not have a factor of 5
+4. `AND` the `<input>` does not have a factor of 7
+3. `THEN` the method should return `<input>`
 
 Within the test, the Arrange-Act-Assert (AAA) pattern has been employed to standardise the readability and structure of the tests. The system under test (SUT) consists of a `Raindrops` class which holds the single `PlingPlangPlong` method that is being tested against in all of the test methods. As the SUT does not have a mutable state, the initial Arrange section has been delegated to the class level field `_sut` to allow for it to seamlessly be shared across all test methods without the need for repeated declarations.
