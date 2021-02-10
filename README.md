@@ -34,7 +34,7 @@ The naming of the test methods take the form of a convention encouraged by [Micr
 2. The scenario under which it's being tested
 3. The expected behaviour when the scenario is invoked
 
-This convention has the advantage of mapping easily onto the more user-friendly Gherkin syntax that is found with Behaviour-Driven Development (BDD) tests. Using the same example test above, the corresponding Gherkin syntax would roughly equate to:
+This convention has the advantage of mapping easily onto the more user-friendly Gherkin syntax that is found with Behaviour-Driven Development (BDD) tests. Using the same example test above, the corresponding Gherkin would roughly equate to:
 1. `GIVEN` the `PlingPlangPlong` method
 2. `WHEN` the `<input>` does not have a factor of 3
 3. `AND` the `<input>` does not have a factor of 5
