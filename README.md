@@ -18,8 +18,8 @@ Write a function that takes as its input a number `n` and converts it to a strin
     - 5, 10, 15, 30 are factors of 5
     - 30 returns `Pling` and `Plang`
     - These results merge together to return `PlingPlang`
-3. 34 has the factors 1, 2, 17, and 34
-    - These values are not factors of either 3, 5, or 7
+3. 34 has the factors 1, 2, 17 and 34
+    - These values are not factors of either 3, 5 or 7
     - 34 returns itself as `34`
 
 ## Testing
