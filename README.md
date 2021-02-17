@@ -45,15 +45,15 @@ public class RaindropTests
 ```
 <image src="images/example-test.png" width="100%" height="100%">
 
-The typical structure of the unit tests used in this application is seen above.
+The typical structure of the unit tests used in this application is seen in the code block above.
 Each test is accompanied by several `[TestCase]` attributes which parameterises the tests to allow for multiple values to be tested against within a single test method.
 
-The naming of the test methods take the form of a convention encouraged by [Microsoft](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices) where it is split into 3 distinct parts:
+The naming of the test methods take the form of a convention encouraged by [Microsoft](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices) where it is split into 3 distinct sections:
 1. The name of the method being tested
-2. The scenario under which it's being tested
-3. The expected behaviour when the scenario is invoked
+2. The scenario under which the method being tested
+3. The expected behaviour of the method when the scenario is invoked
 
-This convention has the advantage of mapping easily onto the more user-friendly Gherkin syntax that is found within Behaviour-Driven Development (BDD) tests. Using the same example test above, the corresponding Gherkin would roughly equate to:
+This convention has the advantage of mapping easily onto the more user-friendly Gherkin syntax that is found within Behaviour-Driven Development (BDD) tests. Using the same example code block above, the corresponding Gherkin would roughly correspond to:
 1. `GIVEN` the `PlingPlangPlong` method
 2. `WHEN` the `<input>` does not have a factor of 3
 3. `AND` the `<input>` does not have a factor of 5
