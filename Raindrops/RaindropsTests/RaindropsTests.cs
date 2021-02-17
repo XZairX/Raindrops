@@ -103,5 +103,13 @@ namespace RaindropsTests
 
             Assert.That(result, Is.EqualTo("PlingPlangPlong"));
         }
+
+        [Test]
+        public void PlingPlangPlong_NumberIsZero_ReturnsPlingPlangPlong()
+        {
+            var result = _sut.PlingPlangPlong(0);
+
+            Assert.That(result, Is.EqualTo("PlingPlangPlong"));
+        }
     }
 }
