@@ -24,6 +24,25 @@ Write a function that takes as its input a number `n` and converts it to a strin
 
 ## Testing
 
+```C#
+[TestFixture]
+public class RaindropTests
+{
+    private readonly Raindrops _sut = new Raindrops();
+
+    [TestCase(-34)]
+    [TestCase(-8)]
+    [TestCase(-1)]
+    [TestCase(1)]
+    [TestCase(8)]
+    [TestCase(34)]
+    public void PlingPlangPlong_NumberDoesNotHaveAFactorOf3Or5Or7_ReturnsNumber(int number)
+    {
+        var result = _sut.PlingPlangPlong(number);
+
+        Assert.That(result, Is.EqualTo(number.ToString()));
+    }
+```
 <image src="images/example-test.png" width="100%" height="100%">
 
 The typical structure of the unit tests used in this application is seen above.
