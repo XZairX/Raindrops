@@ -46,7 +46,7 @@ public class RaindropTests
 <image src="images/example-test.png" width="100%" height="100%">
 
 The typical structure of the unit tests used in this application is seen in the code block above.
-Each test is accompanied by several `[TestCase]` attributes which parameterises the tests to allow for multiple values to be tested against within a single test method.
+Each test is accompanied by several `[TestCase]` attributes which parameterises the tests so that multiple values can be tested against within a single test method.
 
 The naming of the test methods take the form of a convention encouraged by [Microsoft](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices) where it is split into 3 distinct sections:
 1. The name of the method being tested
