@@ -44,7 +44,7 @@ public class RaindropTests
     }
 ```
 
-The typical structure of the unit tests used in this application is seen in the C# code block above. All tests are contained within the `RaindropTests` class where each test is accompanied by several `[TestCase]` attributes. These attributes parameterise the tests so that multiple values can be tested against within a single test method.
+The typical structure of the unit tests used in this application is seen in the C# code block above. All tests are contained within the `RaindropTests.cs` class where each test is accompanied by several `[TestCase]` attributes. These attributes parameterise the tests so that multiple values can be tested against within a single test method.
 
 The naming of the test methods take the form of a [convention encouraged by Microsoft](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices#naming-your-tests) where it is split into 3 distinct sections:
 1. The name of the method being tested
@@ -52,10 +52,10 @@ The naming of the test methods take the form of a [convention encouraged by Micr
 3. The expected behaviour of the method when the scenario is invoked
 
 This convention has the advantage of easily mapping itself onto the more user-friendly Gherkin syntax that is found within Behaviour-Driven Development (BDD) tests. Using the name of the test method within the code block above, the corresponding Gherkin would roughly correspond to:
-1. `Given` the `PlingPlangPlong` method
+1. `Given` the PlingPlangPlong method
 2. `When` the number `<input>` does not have a factor of 3
 3. `And` the number `<input>` does not have a factor of 5
 4. `And` the number `<input>` does not have a factor of 7
 3. `Then` the method should return the number `<input>`
 
-Within the `RaindropTests` class, the Arrange-Act-Assert (AAA) pattern has been employed to standardise the readability and structure of the tests. The system under test (SUT) consists of a `Raindrops` class which simply holds a single `PlingPlangPlong` method and nothing more. As the SUT does not have a mutable state, the initial Arrange section has been delegated to the class level field `_sut` to allow for it to seamlessly be shared across all test methods without the need for repeated declarations.
+Within the `RaindropTests.cs` class, the Arrange-Act-Assert (AAA) pattern has been employed to standardise the readability and structure of the tests. The system under test (SUT) consists of a `Raindrops.cs` class which simply holds a single `PlingPlangPlong()` method and nothing more. As the SUT does not have a mutable state, the initial Arrange section has been delegated to the `private` class level field `_sut` to allow for it to seamlessly be shared across all test methods without the need for repeated declarations.
